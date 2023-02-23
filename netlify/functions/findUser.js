@@ -34,6 +34,6 @@ exports.handler = async function (event, context) {
             'cache-control': 'public, max-age=' + MAX_AGE,
             'content-type': 'image/svg+xml'
         },
-        body: {userId: 123, username: name, age: 13}
+        body:  JSON.stringify({userId: 123, username: name, age: 13})
     };
 };
